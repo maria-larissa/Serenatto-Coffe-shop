@@ -2,6 +2,7 @@ body {
   --bege: #E6E0D6;
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
+  --cinza-escuro: #404040;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -47,5 +48,30 @@ input[type=checkbox]:checked, input[type=checkbox]:focus{
 
 .botao-padrao{
   background-color: var(--marrom-claro);
+}
+
+.input-range::-moz-range-thumb {
+  background: var(--marrom-claro);
+}
+
+.input-range::-moz-range-track {
+  background: var(--cinza-escuro);
+}
+
+footer{
+  background-color: var(--marrom-claro);
+}
+
+
+/* dark mode */
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body, .offcanvas, .accordion, .btn {
+  --bs-nav-link-color: white;
+  --bs-card-color: white;
+  --bs-offcanvas-color: white;
+  --bs-body-color: white;
+  --bs-body-color: white;
+  }
 }
 
